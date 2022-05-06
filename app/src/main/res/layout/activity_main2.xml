@@ -39,10 +39,10 @@
         android:id="@+id/textRegistrarse"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center|left"
-        android:text="Registrarse"
+        android:gravity="center|start|center_vertical"
+        android:text="@string/Registrarse"
         android:textAlignment="gravity"
-        android:textColor="@color/black"
+        android:textColor="@color/secondaryTextColor"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -67,8 +67,8 @@
         android:id="@+id/textingrese"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Ingresa los siguientes datos"
-        android:textColor="@color/black"
+        android:text="@string/datos"
+        android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -107,14 +107,17 @@
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:autofillHints=""
         android:background="#ebebeb"
+        android:hint="@string/hitnt_Nombre"
         android:inputType="textPersonName"
-        android:text="Nombre"
+        android:textColor="@color/primaryColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline35"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline36" />
+        app:layout_constraintTop_toTopOf="@+id/guideline36"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline43"
@@ -131,18 +134,20 @@
         app:layout_constraintGuide_begin="291dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textApellido"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#ebebeb"
-        android:inputType="textPersonName"
-        android:text="Apellidos"
-        android:textColor="@color/black"
+        android:gravity="center|start"
+        android:hint="@string/Apellidos"
+        android:inputType=""
+        android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline43"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline44" />
+        app:layout_constraintTop_toTopOf="@+id/guideline44"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline45"
@@ -172,33 +177,38 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="431dp" />
 
-    <TextView
-        android:id="@+id/textApodo"
+    <EditText
+        android:id="@+id/textpasswordregistro"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#ebebeb"
-        android:inputType="textPersonName"
-        android:text="Apodo Artistico"
-        android:textColor="@color/black"
+        android:gravity="start"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline46"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline45" />
+        app:layout_constraintTop_toTopOf="@+id/guideline45"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textDireccion"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#ebebeb"
-        android:inputType="textPersonName"
-        android:text="Direccion"
-        android:textColor="@color/black"
+        android:gravity="start"
+        android:hint="@string/Direccion"
+        android:inputType="textPostalAddress"
+        android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline48"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline47" />
+        app:layout_constraintTop_toTopOf="@+id/guideline47"
+        tools:ignore="TextContrastCheck,TextViewEdits,TouchTargetSizeCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline49"
@@ -247,42 +257,47 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#ebebeb"
-        android:inputType="textPersonName"
-        android:text="Correo"
-        android:textColor="@color/black"
+        android:gravity="start"
+        android:hint="@string/Correo"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline50"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline49" />
+        app:layout_constraintTop_toTopOf="@+id/guideline49"
+        tools:ignore="TextContrastCheck,TextViewEdits,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/texttelefono"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#ebebeb"
-        android:inputType="textPersonName"
-        android:text="+52"
-        android:textColor="@color/black"
+        android:gravity="center|left"
+        android:hint="@string/telefono"
+        android:inputType="textPhonetic"
+        android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline52"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline51" />
+        app:layout_constraintTop_toTopOf="@+id/guideline51"
+        tools:ignore="RtlHardcoded,TextContrastCheck,TextViewEdits,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/buttonRegistrarse"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:backgroundTint="#FFC107"
-        android:text="registrarse"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/secondaryColor"
+        android:text="@string/registrarse"
+        android:textColor="@color/primaryColor"
         android:textSize="14sp"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline53"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline54" />
+        app:layout_constraintTop_toTopOf="@+id/guideline54"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline55"
@@ -302,8 +317,8 @@
         android:id="@+id/textView11"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="¿Ya cuentas con una cuenta? "
-        android:textColor="@color/black"
+        android:text="@string/cuenta"
+        android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline56"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -314,8 +329,8 @@
         android:id="@+id/textIniciarSesion"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Iniciar sesion"
-        android:textColor="@color/purple_700"
+        android:text="@string/Iniciar_sesion"
+        android:textColor="@color/design_default_color_primary_dark"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline56"
         app:layout_constraintEnd_toStartOf="@+id/guideline38"
