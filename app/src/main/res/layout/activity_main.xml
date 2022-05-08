@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="start"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -18,19 +19,18 @@
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="center"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_local_post_office_24"
+        android:gravity="center_vertical"
         android:hint="@string/usuario"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
+        android:inputType="textEmailAddress"
         android:textColor="@color/secondaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/guideline17"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline7"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="TextContrastCheck"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
@@ -47,34 +47,22 @@
         app:layout_constraintGuide_percent="0.64983165" />
 
     <EditText
-        android:id="@+id/Pwd"
+        android:id="@+id/textPwd"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:drawableStart="@drawable/ic_baseline_lock_21"
         android:ems="10"
-        android:gravity="center"
+        android:gravity="left|center_vertical"
         android:hint="@string/Contraseña"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:textAlignment="center"
         android:textColor="@color/secondaryTextColor"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline9"
-        tools:ignore="DuplicateSpeakableTextCheck"
-        android:importantForAutofill="no" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:backgroundTint="@color/primaryLightColor"
-        app:layout_constraintBottom_toTopOf="@+id/guideline40"
-        app:layout_constraintEnd_toStartOf="@+id/guideline31"
-        app:layout_constraintStart_toStartOf="@+id/Pwd"
-        app:layout_constraintTop_toTopOf="@+id/guideline39"
-        app:srcCompat="@drawable/ic_baseline_lock_21"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/login"
@@ -173,9 +161,8 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:text="@string/olvido_su_nombre_de_usuario_o_cotrase_a"
-        android:textAlignment="center"
         android:textColor="@color/secondaryTextColor"
-        android:textSize="12sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline24"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
         app:layout_constraintHorizontal_bias="0.497"
@@ -211,17 +198,18 @@
         app:layout_constraintGuide_percent="0.74939173" />
 
     <TextView
-        android:id="@+id/registrarse"
+        android:id="@+id/registra"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/registrarse"
-        android:textAlignment="center"
-        android:textColor="@color/secondaryTextColor"
-        android:textSize="12sp"
+        android:gravity="center|center_vertical"
+        android:text="@string/registrar"
+        android:textColor="#3F51B5"
+        android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline26"
         app:layout_constraintEnd_toStartOf="@+id/guideline28"
         app:layout_constraintStart_toStartOf="@+id/guideline27"
-        app:layout_constraintTop_toTopOf="@+id/guideline25" />
+        app:layout_constraintTop_toTopOf="@+id/guideline25"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline29"
@@ -287,19 +275,6 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline32"
         app:layout_constraintStart_toStartOf="@+id/guideline31"
         app:layout_constraintTop_toTopOf="@+id/guideline33" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:backgroundTint="@color/primaryLightColor"
-        app:layout_constraintBottom_toTopOf="@+id/guideline41"
-        app:layout_constraintEnd_toStartOf="@+id/guideline22"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toTopOf="@+id/guideline42"
-        app:srcCompat="@drawable/ic_baseline_local_post_office_24"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline39"

@@ -10,7 +10,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="Contraseña">**********</string>
-    <string name="Registrarse">Registrarse</string>
+    <string name="Registrar">Registrarse</string>
     <string name="hitnt_Nombre">Nombre</string>
     <string name="Apellidos">Apellidos</string>
     <string name="password">ingrese una contraseña</string>
@@ -20,10 +20,10 @@
     <string name="botonRegistrarse">Registrar </string>
     <string name="Direccion">Direccion</string>
     <string name="telefono">telefono</string>
-    <string name="registrarse">Registrarse</string>
+    <string name="registrar">Registrarse</string>
     <string name="datos">Ingresa los siguientes datos</string>
     <string name="usuario">exemplo@exemplo.com</string>
-    <string name="login">login</string>
+    <string name="login">iniciar seción</string>
     <string name="email">Email</string>
     <string name="olvido_su_nombre_de_usuario_o_cotrase_a">Olvido su nombre de usuario o cotraseña?</string>
     <string name="correo">Correo</string>
